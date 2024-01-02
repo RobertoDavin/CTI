@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #00008B;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: auto;
+}
+
+.language {
+    margin: 0;
+    margin-right: 100px;
+    color: inherit;
+}
+
+/* Logos Container Styles */
+.logos-container {
+    display: flex;
+    background-color: #fff;
+    padding: 1em;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.helios-logo img {
+    max-width: 125px;
+    height: auto;
+    margin-left: 150px;
+}
+
+.sangfor-logo img {
+    max-width: 175px;
+    height: auto;
+}
+
+/* Cybersecurity Section Styles */
+.cybersecurity-section {
+    background-image: url('../assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: left; /* Align text to the left */
+    padding: 4em 20px; /* Adjust padding as needed */
+    height: 100vh;
+}
+
+.cybersecurity-content {
+    max-width: 800px;
+    margin: 150px;
+}
+
+.cybersecurity-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cybersecurity-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.trial-button {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size */
+    font-family: 'Arial', sans-serif; /* Specify the desired font family */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.trial-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.trial-button span {
+    margin-left: 5px; /* Add space between text and arrow */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #dbdbdb; /* You can set the background color as needed */
+}
+
+.contact-text {
+    max-width: 400px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.contact-text h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00008B;
+}
+
+.contact-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* white box form */
+.contact-form {
+    height: auto;
+    width: 560px;
+    background-color: #ffffff;
+    margin: 0 auto 0;
+    padding-right: 20px;
+}
+
+
+.contact-form .form-header {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 7%;
+}
+
+.contact-form .form-header h2 {
+    color: #00008B;
+}
+
+.contact-form form {
+    width: 90%;
+    margin: auto;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    font-weight: bold;
+    color: grey;
+}
+
+.form-group input {
+    height: 45px;
+    width: calc(50% - 5px); /* Make first name and last name side by side */
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.form-group input:last-child {
+    margin-left: 10px; /* Add spacing between first name and last name */
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    border-color: #9b9b9b;
+}
+
+.form-group input:checkbox {
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+
+.contact-form button:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row .name {
+    width: 48%;
+}
+
+.form-row .fname {
+    margin-right: 20px;
+}
+
+.form-row .name label {
+    margin-left: 10%;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    border-color: #9b9b9b;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 2%;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox label {
+    margin: 0 2%; /* top&bottom left&right */
+}
+
+.form-group select {
+    height: 45px;
+    margin-left: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 15px; /* Add margin for consistency with other inputs */
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group select:valid {
+    border-color: #9b9b9b;
+}
+
+/* Submit button form*/
+.form-group button {
+    height: 45px;
+    margin: 20px 0 10px 0;
+    width: 40%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: #4CAF50; /* Green button color */
+    transition: background-color 0.3s ease;
+}
+
+.submit {
+    margin: auto;
+    text-align: center;
+}
+.form-group button:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+/* Sangfor Cyber Command Advantages & Features */
+
+.command-advantage {
+    display: flex;
+    height: 117vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, blue , green);
+    gap: 40px;
+}
+
+.command-feature {
+    display: flex;
+    height: 117vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.command-feature h2 {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #00008B;
+}
+
+.command-advantage h2 {
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    font-weight: bold;
+    color: white;
+}
+
+.command-row img {
+    width: 100px;
+    height: 100px;
+}
+
+.command-row:nth-child(3){
+    margin-bottom: 100px;
+}
+
+.command-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.command-row div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 10px 0;
+}
+
+/* Sangfor Cyber Command Values */
+
+.command-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+}
+
+.command-value h2 {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #00008B;
+    text-align: center;
+}
+
+.value-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 600px;
+    height: 300px;
+}
+
+.customer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 700px;
+    height: 70px;
+    background-color: rgb(11, 0, 128);
+    margin-bottom: -35px;
+    z-index: 1;
+}
+
+.customer-reference {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.customer-reference p {
+    text-align: center;
+}
+
+.command-row.customer {
+    display: flex;
+    height: 300px;
+}
+
+.command-row.customer div {
+    width: 200px;
+    height: 200px;
+    box-shadow: rgba(1, 1, 2, 0.2) 0px 7px 29px 0px;
+}
+
+.command-row.customer.icon div {
+    width: 200px;
+    height: 200px;
+    box-shadow: none;
+    margin: 0 50px 0;
+}
+
+.command-row.customer.icon div img{
+    width: 100%;
+}
+
+.command-row.customer.icon2 div img{
+    width: 100px;
+    height: 90px;
+}
+
+/* Footer */
+
+.footer {
+    background-image: linear-gradient(to right, blue , green);
+    color: #fff;
+    text-align: left;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20px; */
+    margin-left: 100px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+.footer-company {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.location-info {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    margin-left: 100px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 70px;
+    background-color: #00008B;
+}
+
+.thankyou-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+.thankyou-page .thankyou-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+.thankyou-page .thankyou-info button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(0, 209, 0);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-right {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
